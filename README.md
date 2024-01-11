@@ -1,4 +1,6 @@
-# Follow this steps
+# Detect the latest release of Cloudflare WARP Client and Send an email notification
+![Alt text](image.png)
+
 - Create and Bind KV namespace
 
 ```
