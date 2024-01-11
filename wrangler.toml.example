@@ -1,0 +1,17 @@
+name = "warp-release"
+main = "src/worker.ts"
+compatibility_date = "2024-01-10"
+
+send_email = [
+    {type = "send_email", name = "EMAIL_WORKER", destination_address = "you@example.com"},
+]
+
+# wrangler kv:namespace create WARP_RELEASE_KV
+kv_namespaces = [
+	 { binding = "WARP_RELEASE_KV", id = "xxxxx"}
+]
+
+# min hour day month weekdays (Cron Triggers execute on UTC time.)
+# every day at 10 AM JST
+[triggers]
+crons = ["0 1 * * *"]

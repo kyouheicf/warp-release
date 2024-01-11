@@ -1,0 +1,5 @@
+.dev.vars
+node_modules/
+.prettierrc
+wrangler.toml
+.wrangler
