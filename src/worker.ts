@@ -28,8 +28,8 @@ async function triggerEvent(event, kv, emailworker, sender, recipient) {
 
 	// Define App Center URL to get release info
 	const MACOS_BETA_RELEASE_URL = 'https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-macos/distribution_groups/beta'
-	//const MACOS_STABLE_RELEASE_URL = 'https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-macos-1/distribution_groups/release'
-	//const WINDOWS_BETA_RELEASE_URL = 'https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows/distribution_groups/beta'
+	//const MACOS_STABLE_RELEASE_URL = 'https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-macos-1/distribution_groups/release'
+	//const WINDOWS_BETA_RELEASE_URL = 'https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-windows/distribution_groups/beta'
 	//const WINDOWS_STABLE_RELEASE_URL = 'https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release'
 
 	const response = await fetch(`${MACOS_BETA_RELEASE_URL}/public_releases`)
