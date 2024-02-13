@@ -31,6 +31,7 @@ async function triggerEvent(event, kv, emailworker, sender, recipient) {
 	//const MACOS_STABLE_RELEASE_URL = 'https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-macos-1/distribution_groups/release'
 	//const WINDOWS_BETA_RELEASE_URL = 'https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-windows/distribution_groups/beta'
 	//const WINDOWS_STABLE_RELEASE_URL = 'https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-windows-1/distribution_groups/release'
+	//const IOS_RELEASE_URL = 'https://itunes.apple.com/lookup?id=6443476492'
 
 	const response = await fetch(`${MACOS_BETA_RELEASE_URL}/public_releases`)
 	//console.log(await response.json())
